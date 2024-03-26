@@ -1,0 +1,239 @@
+% 导言区（设置页面布局、加载必要的宏包等）
+\usepackage{geometry} % 用于设置页面布局
+\usepackage{authblk}  % 用于处理作者信息
+\usepackage{caption}  % 用于生成标题
+\usepackage{booktabs} % 用于生成漂亮的表格
+\usepackage{hyperref} % 用于添加超链接
+\usepackage{cite}     % 用于管理参考文献引用
+\usepackage[UTF8]{ctex}% 用于处理中文
+\usepackage{graphicx} % 用于插入图片
+\usepackage{listings} % 用于插入代码
+\usepackage{xcolor}   % 用于设置颜色
+\usepackage{abstract} % 用于设置摘要
+\usepackage{sectsty}  % 用于设置章节标题
+\usepackage{fancyhdr} %用于装饰页脚页眉
+\usepackage{multicol} %用于实现多栏排版
+\usepackage{amsmath}  %用于数学公式
+\usepackage{siunitx}  %用于插入单位
+\usepackage{tikz}     %用于绘图
+\usepackage{subcaption}%用于插入子图
+
+
+\setmonofont{Consolas} %用于设置代码字体
+\pagestyle{fancy}      %用于装饰页脚页眉
+\fancyhf{}
+\hypersetup{colorlinks=true, linkcolor=black}
+%\renewcommand\Authands{, } % 将 and 替换为逗号和空格
+
+% 用来设置附录中代码的样式
+
+\lstset{
+    basicstyle          =   \sffamily,          % 基本代码风格
+    keywordstyle        =   \bfseries,          % 关键字风格
+    commentstyle        =   \rmfamily\itshape,  % 注释的风格，斜体
+    stringstyle         =   \ttfamily,  % 字符串风格
+    flexiblecolumns,                % 别问为什么，加上这个
+    numbers             =   left,   % 行号的位置在左边
+    showspaces          =   false,  % 是否显示空格，显示了有点乱，所以不现实了
+    numberstyle         =   \zihao{-5}\ttfamily,    % 行号的样式，小五号，tt等宽字体
+    showstringspaces    =   false,
+    captionpos          =   t,      % 这段代码的名字所呈现的位置，t指的是top上面
+    %frame               =   shadowbox,   % 显示边框
+    rulesepcolor        =   \color{red!20!green!20!blue!20},
+}
+
+\lstdefinestyle{Python}{
+    language        =   Python, % 语言选Python
+    frame=single,
+    frameround=tttt, % 这个参数设置圆角
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+
+\definecolor{cpppurple}{RGB}{112, 0, 164}
+\definecolor{cppblue}{RGB}{38, 139, 210}
+\definecolor{cppgreen}{RGB}{28, 161, 117}
+\definecolor{cppred}{RGB}{220, 50, 47}
+\definecolor{cppstring}{RGB}{133, 153, 0}
+\definecolor{cppcomment}{RGB}{102, 102, 102}
+
+\lstdefinestyle{CppVS}{
+    language        =   C++, % 语言选C++
+    frame=single,
+    frameround=tttt, % 这个参数设置圆角
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{cpppurple},
+    keywordstyle    =   [2] \color{cppblue},  % 设置不同的关键字颜色
+    stringstyle     =   \color{cppstring},
+    commentstyle    =   \color{cppcomment}\ttfamily,
+    morecomment     =   [l][\color{cppcomment}]{//},
+    morecomment     =   [s][\color{cppcomment}]{/*}{*/},
+    moredelim       =   [s][\color{cppstring}]{\"}{\"},
+    moredelim       =   [s][\color{cppstring}]{'}{'},
+    moredelim       =   [l][\color{cppstring}]{\#},
+    breaklines      =   true,
+    columns         =   fixed,
+    basewidth       =   0.5em,
+    morekeywords    =   {nullptr, override, int, char, void, std, string, cin, cout, endl, vector, list, map, set, algorithm}
+}
+
+\lstdefinestyle{UVisionC}{
+    language        =   C, % 语言选C
+    frame=single,
+    frameround=tttt, % 这个参数设置圆角
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{green!60!black},  % 设置不同的关键字颜色
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{gray}\ttfamily,
+    morecomment     =   [l][\color{gray}]{//},
+    morecomment     =   [s][\color{gray}]{/*}{*/},
+    moredelim       =   [s][\color{red}]{\"}{\"},
+    moredelim       =   [s][\color{red}]{'}{'},
+    moredelim       =   [l][\color{red}]{\#},
+    breaklines      =   true,
+    columns         =   fixed,
+    basewidth       =   0.5em,
+    morekeywords    =   {if, else, while, for, int, char, void, struct, typedef, return, break, continue, sizeof}
+}
+
+\lstdefinelanguage{ARMASM}
+{
+  sensitive=false,
+  % base letter (case insensitive)
+  morecomment=[l]{//}, % l-line comment
+  morecomment=[s]{/*}{*/}, % s-multiline comment
+  morestring=[b]", % define strings
+  morestring=[b]', % define strings
+  morekeywords={
+    SVC_Handler,
+    TST,
+    MRSEQ,
+    MRSNE,
+    LDR,
+    SUB,
+    AND,
+    CPSID,
+    STRB,
+    MOVS,
+    BX,
+    MSR,
+    STR,
+    CPSIE,
+    B
+  },
+  % list of operators
+  morekeywords={[2]
+    LR, R1, MSP, PSP, R0,
+    SVC_Handler_Main
+  },
+  % list of other non-standard identifiers
+  %stringstyle=\color{cppstring},
+  %identifierstyle=\color{blue},
+  keywordstyle=\color{blue}\bfseries,
+  keywordstyle={[2]\color{green!60!black}\bfseries},
+  commentstyle=\color{gray}\textit,
+  stringstyle=\color{red},
+  % identifierstyle=\color{red},
+  % keywordstyle=\color{blue}\bfseries,
+  % keywordstyle={[2]\color{green!60!black}\bfseries},
+  % commentstyle=\color{gray}\textit,
+  % stringstyle=\color{red}
+}
+
+\lstdefinestyle{UVisionARMASM}{
+    language        =   ARMASM,
+    frame=single,
+    frameround=tttt, % 这个参数设置圆角
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue}\bfseries,
+    keywordstyle    =   [2] \color{green!60!black}\bfseries,  % 设置不同的关键字颜色
+    stringstyle     =   \color{red},
+    commentstyle    =   \color{gray}\textit,
+    breaklines      =   true,
+    columns         =   fixed,
+    basewidth       =   0.5em,
+}
+
+\lstdefinestyle{TeX}{
+    language        =   [LaTeX]TeX, % 语言选LaTeX
+    frame           =   single,
+    frameround      =   tttt, % 这个参数设置圆角
+    basicstyle      =   \ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+
+
+
+% 设置页面布局
+\geometry{a4paper, margin=1in}
+
+% 标题页信息
+
+
+\lstdefinestyle{PythonR}{
+    language        =   Python, % 语言选Python
+    frame=single,
+    frameround=rrrr, % 这个参数设置圆角
+    %frame=shadowbox,                               % 定义是否有阴影 Define whether there is a shadow
+    %rulesepcolor=\color{red!20!green!20!blue!20},  % 定义阴影颜色 Define shadow color
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+
+\lstdefinestyle{PythonS}{
+    language        =   Python, % 语言选Python
+    frame=single,
+    frameround=rrrr, % 这个参数设置圆角
+    frame=shadowbox,                               % 定义是否有阴影 Define whether there is a shadow
+    rulesepcolor=\color{red!20!green!20!blue!20},  % 定义阴影颜色 Define shadow color
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}
+
+\lstdefinestyle{PythonFuck}{
+    language        =   Python, % 语言选Python
+    frame=single,
+    frameround=trtr, % 这个参数设置圆角
+    frame=shadowbox,                               % 定义是否有阴影 Define whether there is a shadow
+    rulesepcolor=\color{red!20!green!20!blue!20},  % 定义阴影颜色 Define shadow color
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    keywordstyle    =   [2] \color{teal},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    breaklines      =   true,   % 自动换行，建议不要写太长的行
+    columns         =   fixed,  % 如果不加这一句，字间距就不固定，很丑，必须加
+    basewidth       =   0.5em,
+}

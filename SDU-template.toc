@@ -1,0 +1,42 @@
+\contentsline {section}{分工情况 Cooperation}{I}{section*.1}%
+\contentsline {section}{摘要 Abstract}{I}{section*.2}%
+\contentsline {section}{目录 Table of Contents}{II}{section*.3}%
+\contentsline {section}{\numberline {1}SDU \LaTeX 模板介绍 Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}基本使用 Basic Usage}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}段落以及空行 Paragraph and Blank Line}{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}itemize环境 Itemize Environment}{1}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}行间代码 Inline Code}{2}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.4}使用分栏 Using Columns}{2}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.2}插入图片 Insert Picture}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}插入代码 Insert Code}{3}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}代码写在内部文件 Code in Internal File}{3}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}代码写在外部文件 Code in External File}{4}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4}插入表格 Insert Table}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}插入公式 Insert Formula}{7}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}行内公式 Inline Formula}{7}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}行间公式 Display Formula}{7}{subsubsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.6}插入参考文献 Insert Reference}{8}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}内部参考文献 Internal Reference}{8}{subsubsection.1.6.1}%
+\contentsline {subsubsection}{\numberline {1.6.2}外部参考文献 External Reference}{8}{subsubsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.7}插入超链接 Insert Hyperlink}{9}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}插入脚注 Insert Footnote}{9}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}绘制图像 Draw Image}{10}{subsection.1.9}%
+\contentsline {subsubsection}{\numberline {1.9.1}绘制流程图 Draw Flowchart}{10}{subsubsection.1.9.1}%
+\contentsline {subsubsection}{\numberline {1.9.2}绘制树图 Draw Tree Diagram}{12}{subsubsection.1.9.2}%
+\contentsline {subsubsection}{\numberline {1.9.3}绘制拓扑图 Draw Topology Diagram}{12}{subsubsection.1.9.3}%
+\contentsline {subsubsection}{\numberline {1.9.4}绘制时序图 Draw Timing Diagram}{13}{subsubsection.1.9.4}%
+\contentsline {subsubsection}{\numberline {1.9.5}绘制其他图 Draw Other Diagram}{14}{subsubsection.1.9.5}%
+\contentsline {subsubsection}{\numberline {1.9.6}使用python绘图 Using Python to Draw}{14}{subsubsection.1.9.6}%
+\contentsline {subsection}{\numberline {1.10}关于页眉页脚 About Header and Footer}{15}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}关于封面 About Cover}{16}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}关于宏包 About Package}{16}{subsection.1.12}%
+\contentsline {section}{\numberline {2}个性化 Personalization}{17}{section.2}%
+\contentsline {subsection}{\numberline {2.1}字体 Font}{17}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}颜色 Color}{17}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}代码高亮 Code Highlighting}{18}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}已知代码的代码高亮 Code Highlighting for Known Code}{18}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}未知代码的代码高亮 Code Highlighting for Unknown Code}{19}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}代码框个性化 Code Box Personalization}{20}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}修改超链接颜色 Change Link Color}{22}{subsection.2.5}%
+\contentsline {section}{\numberline {3}总结 Summary}{22}{section.3}%
+\contentsline {section}{附录 Appendix}{23}{section*.12}%

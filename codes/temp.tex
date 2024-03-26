@@ -1,0 +1,20 @@
+\begin{lstlisting}[
+    style       =   Python,
+    caption     =   {\bf Python示例 Python Example},
+    label       =   {py}
+]
+def extended_gcd(a, b):
+    if b == 0:
+        return (a, 1, 0)
+    else:
+        d, x, y = extended_gcd(b, a % b)
+        return (d, y, x - (a // b) * y)
+
+
+def mod_inverse(a, m):
+    d, x, y = extended_gcd(a, m)
+    if d != 1:
+        raise ValueError("Modular inverse does not exist")
+    else:
+        return x % m
+\end{lstlisting} % 这里的闭合代码就可以正常显示 The closing code here can be displayed normally
