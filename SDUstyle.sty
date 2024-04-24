@@ -17,6 +17,7 @@
 \usepackage{siunitx}  %用于插入单位
 \usepackage{tikz}     %用于绘图
 \usepackage{subcaption}%用于插入子图
+\usepackage{float}    %用于设置图片位置
 
 
 \setmonofont{Consolas} %用于设置代码字体
@@ -179,6 +180,41 @@
     basewidth       =   0.5em,
 }
 
+\lstdefinestyle{CVS}{
+    language        =   C, % 语言选C
+    frame=single,
+    frameround=tttt, % 这个参数设置圆角
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{cpppurple},
+    keywordstyle    =   [2] \color{cppblue},  % 设置不同的关键字颜色
+    stringstyle     =   \color{cppstring},
+    commentstyle    =   \color{cppcomment}\ttfamily,
+    morecomment     =   [l][\color{cppcomment}]{//},
+    morecomment     =   [s][\color{cppcomment}]{/*}{*/},
+    moredelim       =   [s][\color{cppstring}]{\"}{\"},
+    moredelim       =   [s][\color{cppstring}]{'}{'},
+    moredelim       =   [l][\color{cppstring}]{\#},
+    breaklines      =   true,
+    columns         =   fixed,
+    basewidth       =   0.5em,
+    morekeywords    =   {nullptr, override, int, char, void, std, string, cin, cout, endl, vector, list, map, set, algorithm,printf,scanf}
+}
+\lstdefinestyle{Shell}{
+    language        =   bash, % 语言选bash
+    frame           =   single,
+    frameround      =   tttt, % 这个参数设置圆角
+    basicstyle      =   \zihao{-5}\ttfamily,
+    numberstyle     =   \zihao{-5}\ttfamily,
+    keywordstyle    =   \color{blue},
+    stringstyle     =   \color{magenta},
+    commentstyle    =   \color{red}\ttfamily,
+    identifierstyle =   \color{black},
+    breaklines      =   true,  % 自动换行，建议不要写太长的行
+    columns         =   fixed, % 字间距固定
+    basewidth       =   0.5em,
+    showstringspaces=   false, % 不在字符串中显示空格
+}
 
 
 % 设置页面布局
